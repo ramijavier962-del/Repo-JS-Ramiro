@@ -19,5 +19,7 @@ switch(dia){
                 case 5:
                     console.log(" viernes")
                     break;
+
+    default:
+        console.log(" finn")
 }
-console.log(" finn")
