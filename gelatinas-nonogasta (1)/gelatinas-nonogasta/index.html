@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gelatinas artesanales de Nonogasta. Gelatinas de leche, yogur, crema, durazno, frutilla y dulce de leche.">
+  <title>DULCE NONOGASTA | Gelatinas Artesanales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="inicio">
+    <nav class="nav container">
+      <a class="brand" href="#inicio">
+        <span class="brand-icon">◆</span>
+        <span>DULCE <strong>NONOGASTA</strong></span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <button class="cart-btn" id="openCart">
+          🛒 Carrito <span id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <span class="eyebrow">EMPRENDIMIENTO LOCAL · NONOGASTA</span>
+          <h1>GELATINAS QUE<br><span>CONQUISTAN</span><br>NONOGASTA.</h1>
+          <p>Gelatinas artesanales, frescas y hechas con ganas de crecer. Elegí tu sabor, armá tu pedido y disfrutá algo rico sin vueltas.</p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn btn-primary">VER CATÁLOGO <span>→</span></a>
+            <button class="btn btn-outline" id="heroCart">HACER PEDIDO 🛒</button>
+          </div>
+          <div class="hero-features">
+            <span>✓ Hechas en Nonogasta</span>
+            <span>✓ Pedidos personalizados</span>
+            <span>✓ Bien fresquitas</span>
+          </div>
+        </div>
+        <div class="hero-product">
+          <div class="hero-image-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6dnQ_p0jpOFlMIj_SjW3UF18JC0p2yKrOzkxivQzbig&s=10" alt="Gelatina de frutilla y yogur en vaso">
+            <div class="local-stamp">HECHO<br><strong>EN<br>NONOGASTA</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalogo" id="catalogo">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">NUESTRO CATÁLOGO</span>
+            <h2>GELATINAS ARTESANALES</h2>
+          </div>
+          <p>Sabores clásicos y combinaciones especiales. <strong>$500</strong> las clásicas · <strong>$1000</strong> las variedades con leche.</p>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="leche">Con leche</button>
+          <button class="filter" data-filter="frutal">Frutales</button>
+          <button class="filter" data-filter="especial">Especiales</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container promo-inner">
+        <div>
+          <span class="eyebrow">¿TENÉS ANTOJO?</span>
+          <h2>ARMÁ TU PEDIDO. FÁCIL. RÁPIDO. LOCAL.</h2>
+          <p>Agregá tus gelatinas al carrito y simulá tu compra. Sin registros y sin base de datos.</p>
+        </div>
+        <a href="#catalogo" class="btn btn-dark">Quiero una gelatina 🍓</a>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-circle">🍮</div>
+          <div class="floating-note note-one">100% ganas de crecer 🚀</div>
+          <div class="floating-note note-two">Hecho en Nonogasta 📍</div>
+        </div>
+
+        <div class="about-copy">
+          <span class="eyebrow">UN EMPRENDIMIENTO LOCAL</span>
+          <h2>De una idea sencilla a un emprendimiento con futuro.</h2>
+          <p>
+            Soy un emprendedor de Nonogasta con ganas de crecer, aprender y convertir
+            este pequeño proyecto en algo cada vez más grande.
+          </p>
+          <p>
+            Preparo gelatinas de distintos sabores para ofrecer un postre rico,
+            accesible y perfecto para compartir. Esta página nace para digitalizar
+            el emprendimiento, mostrar el catálogo y facilitar los pedidos.
+          </p>
+
+          <div class="stats">
+            <div><strong>2</strong><span>precios base</span></div>
+            <div><strong>6+</strong><span>sabores</span></div>
+            <div><strong>1</strong><span>gran objetivo</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact-box">
+        <div>
+          <span class="eyebrow">PEDIDOS Y CONSULTAS</span>
+          <h2>¿Querés hacer un pedido?</h2>
+          <p>Armá tu carrito y usá el botón de finalizar compra. En esta versión escolar, el pedido se simula localmente y no utiliza base de datos.</p>
+        </div>
+        <button class="btn btn-primary" id="contactCart">Abrir mi carrito 🛒</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand footer-brand" href="#inicio">◆ DULCE <strong>NONOGASTA</strong></a>
+        <p>Gelatinas artesanales hechas con ganas de crecer.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="copyright">© 2026 Dulce Nonogasta · Proyecto web</p>
+    </div>
+  </footer>
+
+  <!-- Carrito -->
+  <div class="modal" id="cartModal" aria-hidden="true">
+    <div class="modal-backdrop" id="closeCartBackdrop"></div>
+    <div class="cart-panel">
+      <div class="cart-header">
+        <div>
+          <span class="eyebrow">TU PEDIDO</span>
+          <h2>Carrito</h2>
+        </div>
+        <button class="icon-btn" id="closeCart" aria-label="Cerrar carrito">✕</button>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="empty-cart" id="emptyCart">
+        <span>🛒</span>
+        <h3>Tu carrito está vacío</h3>
+        <p>Elegí alguna gelatina del catálogo para comenzar.</p>
+      </div>
+
+      <div class="cart-summary">
+        <div><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+        <div><span>Entrega</span><strong>Consultar</strong></div>
+        <div class="total"><span>Total del pedido</span><strong id="cartTotal">$0</strong></div>
+      </div>
+
+      <button class="btn btn-primary full" id="checkoutBtn">Finalizar compra simulada</button>
+      <button class="btn btn-outline full" id="continueBtn">Seguir comprando</button>
+    </div>
+  </div>
+
+  <!-- Checkout -->
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="checkout-panel">
+      <button class="icon-btn checkout-close" id="closeCheckout">✕</button>
+      <span class="eyebrow">CHECKOUT DEMO</span>
+      <h2>Finalizá tu pedido</h2>
+      <p class="muted">Esto es una simulación: no se realiza ningún pago real.</p>
+
+      <form id="checkoutForm">
+        <label>
+          Tu nombre
+          <input type="text" id="customerName" placeholder="Ej. Juan" required>
+        </label>
+
+        <label>
+          ¿Cómo querés recibirlo?
+          <select id="delivery" required>
+            <option value="">Elegí una opción</option>
+            <option>Retiro en Nonogasta</option>
+            <option>Consultar entrega</option>
+          </select>
+        </label>
+
+        <label>
+          Nota para el pedido
+          <textarea id="orderNote" rows="3" placeholder="Ej. Quiero tenerlo listo para las 18:00"></textarea>
+        </label>
+
+        <div class="demo-order" id="demoOrder"></div>
+
+        <button class="btn btn-primary full" type="submit">Confirmar pedido ✨</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js.js"></script>
+</body>
+</html>
