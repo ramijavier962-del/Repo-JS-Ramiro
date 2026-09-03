@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORGE Nutrition | Nutrición Deportiva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">🔥 EQUIPATE · ENTRENÁ · SUPERATE</div>
+<header><nav class="container">
+<a class="logo" href="#inicio"><b>F</b><span>FORGE<small>NUTRITION</small></span></a>
+<button id="menuBtn">☰</button>
+<div class="nav" id="nav"><a href="#inicio">Inicio</a><a href="#categorias">Categorías</a><a href="#productos">Productos</a><a href="#beneficios">Beneficios</a><a href="#faq">FAQ</a><button id="openCart">🛒 CARRITO <i id="count">0</i></button></div>
+</nav></header>
+
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid">
+<div>
+<span class="tag">NUTRICIÓN DEPORTIVA</span>
+<h1>ENTRENÁ<br><em>MÁS FUERTE.</em></h1>
+<p>Catálogo demo de suplementos y accesorios deportivos. Una tienda moderna, extensa y responsive, creada con HTML, CSS y JavaScript, sin base de datos.</p>
+<div class="actions"><a class="btn green" href="#productos">VER PRODUCTOS →</a><a class="btn" href="#categorias">EXPLORAR CATEGORÍAS</a></div>
+<div class="stats"><span><b>100%</b> DIGITAL</span><span><b>24/7</b> ONLINE</span><span><b>0</b> BASE DE DATOS</span></div>
+</div>
+<div class="hero-art"><div class="bottle"><div class="cap"></div><div class="label"><small>FORGE</small><strong>WHEY</strong><span>PROTEIN</span></div></div><div class="float f1">⚡<b>PERFORMANCE</b><small>SPORT SERIES</small></div><div class="float f2">✓<b>CATÁLOGO DEMO</b><small>COMPRA SIMULADA</small></div></div>
+</div></section>
+
+<section class="trust"><div class="container"><span>✓ CATÁLOGO ORGANIZADO</span><span>✓ COMPRA SIMULADA</span><span>✓ RESPONSIVE</span><span>✓ SIN BASE DE DATOS</span></div></section>
+
+<section class="section" id="categorias"><div class="container">
+<div class="title"><div><span class="tag">EXPLORÁ</span><h2>CATEGORÍAS</h2></div><p>Filtrá el catálogo para encontrar rápidamente cada tipo de producto.</p></div>
+<div class="cats">
+<button data-cat="proteina">🥤<small>01</small><h3>PROTEÍNAS</h3><p>Productos proteicos</p>→</button>
+<button data-cat="energia">⚡<small>02</small><h3>ENERGÍA</h3><p>Opciones deportivas</p>→</button>
+<button data-cat="bienestar">💊<small>03</small><h3>BIENESTAR</h3><p>Vitaminas y minerales</p>→</button>
+<button data-cat="accesorios">🏋️<small>04</small><h3>ACCESORIOS</h3><p>Complementos deportivos</p>→</button>
+</div></div></section>
+
+<section class="section products" id="productos"><div class="container">
+<div class="title"><div><span class="tag">CATÁLOGO</span><h2>PRODUCTOS DESTACADOS</h2></div>
+<div class="filters" id="filters"><button class="active" data-filter="todos">TODOS</button><button data-filter="proteina">PROTEÍNAS</button><button data-filter="energia">ENERGÍA</button><button data-filter="bienestar">BIENESTAR</button><button data-filter="accesorios">ACCESORIOS</button></div></div>
+<div class="grid" id="grid"></div></div></section>
+
+<section class="banner"><div class="container banner-grid"><div><span class="tag dark">FORGE CLUB</span><h2>UNA TIENDA QUE<br>SE HACE <b>NOTAR.</b></h2><p>Una identidad visual fuerte hace que un emprendimiento deportivo sea reconocible y profesional.</p></div><div class="points"><p><b>01</b> Diseño moderno</p><p><b>02</b> Catálogo claro</p><p><b>03</b> Carrito funcional</p><p><b>04</b> Checkout simulado</p></div></div></section>
+
+<section class="section" id="beneficios"><div class="container">
+<div class="title center"><span class="tag">CARACTERÍSTICAS</span><h2>TODO PENSADO PARA VENDER MEJOR</h2><p>Esta demo representa cómo podría funcionar una tienda digital completa.</p></div>
+<div class="features"><article><b>01</b><h3>CATÁLOGO DIGITAL</h3><p>Productos con imagen, categoría, descripción y precio.</p></article><article><b>02</b><h3>COMPRA SIMPLE</h3><p>Agregar, quitar y modificar cantidades desde el carrito.</p></article><article><b>03</b><h3>RESPONSIVE</h3><p>Adaptación para PC, tablet y celular.</p></article><article><b>04</b><h3>SIN BD</h3><p>El catálogo vive en JavaScript y el carrito en localStorage.</p></article></div>
+</div></section>
+
+<section class="section dark-section"><div class="container"><div class="title"><div><span class="tag">PROCESO</span><h2>DEL PRODUCTO AL PEDIDO</h2></div></div><div class="process"><div><b>01</b><h3>EXPLORÁ</h3><p>Revisá categorías.</p></div><div><b>02</b><h3>AGREGÁ</h3><p>Elegí cantidades.</p></div><div><b>03</b><h3>REVISÁ</h3><p>Comprobá el total.</p></div><div><b>04</b><h3>CONFIRMÁ</h3><p>Generá el pedido demo.</p></div></div></div></section>
+
+<section class="section" id="faq"><div class="container faq"><div><span class="tag">PREGUNTAS</span><h2>FAQ</h2><p>Información del funcionamiento de la tienda.</p></div><div>
+<details><summary>¿La compra es real?</summary><p>No. El checkout es una simulación y no procesa pagos.</p></details>
+<details><summary>¿Necesita una base de datos?</summary><p>No. Los productos están definidos en JavaScript y el carrito se guarda localmente en el navegador.</p></details>
+<details><summary>¿Puedo cambiar productos y precios?</summary><p>Sí. Se editan fácilmente desde el arreglo de productos de js.js.</p></details>
+<details><summary>¿Funciona en celular?</summary><p>Sí. El diseño tiene media queries para adaptar la interfaz a pantallas pequeñas.</p></details>
+</div></div></section>
+</main>
+
+<footer><div class="container foot"><div><a class="logo"><b>F</b><span>FORGE<small>NUTRITION</small></span></a><p>Proyecto de e-commerce de nutrición deportiva.</p></div><div><h4>NAVEGACIÓN</h4><a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#faq">FAQ</a></div><div><h4>TECNOLOGÍAS</h4><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div><div><h4>IMPORTANTE</h4><p>Demo educativa. El uso de suplementos debe realizarse con información adecuada y, cuando corresponda, asesoramiento profesional.</p></div></div><div class="bottom">© 2026 FORGE Nutrition · Demo educativa</div></footer>
+
+<div class="modal" id="cartModal"><div class="back" id="cartBack"></div><aside><div class="head"><div><span class="tag">TU PEDIDO</span><h2>CARRITO</h2></div><button class="close" id="closeCart">×</button></div><div id="items"></div><div id="empty" class="empty">🛒<h3>Tu carrito está vacío</h3><p>Agregá productos desde el catálogo.</p></div><div class="total"><p>SUBTOTAL <b id="subtotal">$0</b></p><p>ENVÍO <b>A consultar</b></p><strong>TOTAL <b id="total">$0</b></strong></div><button class="btn green full" id="checkout">FINALIZAR COMPRA DEMO →</button><button class="btn full" id="continue">SEGUIR COMPRANDO</button></aside></div>
+
+<div class="modal" id="checkoutModal"><div class="back" id="checkoutBack"></div><div class="checkout"><button class="close" id="closeCheckout">×</button><span class="tag">CHECKOUT DEMO</span><h2>CONFIRMÁ TU PEDIDO</h2><p>Esta demostración no realiza cobros.</p><form id="form"><label>Nombre<input id="name" required placeholder="Ej. Juan Pérez"></label><label>Entrega<select id="delivery" required><option value="">Seleccionar</option><option>Retiro</option><option>Entrega a domicilio</option><option>Coordinar</option></select></label><label>Observaciones<textarea id="notes" rows="3"></textarea></label><div id="preview" class="preview"></div><button class="btn green full">CONFIRMAR PEDIDO SIMULADO ✓</button></form></div></div>
+<div class="toast" id="toast"></div>
+<script src="js.js"></script>
+</body></html>
